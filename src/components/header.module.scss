@@ -24,5 +24,8 @@
   color: #666;
 }
 .active-nav-item {
-  color: #333;
+  color: #fff;
+  background: #333;
+  padding: 1rem;
+  transition: ease-in-out 0.5s;
 }
