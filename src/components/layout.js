@@ -1,5 +1,5 @@
 import React from "react"
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import SideBar from "./sidebar"
 import Drawer from '@material-ui/core/Drawer';
@@ -30,7 +30,7 @@ const Layout = props => {
       </div>
       <Drawer anchor="right" open={state.right} onClose={toggle('right', false)}>
         <div className={layoutStyles.rightDrawer}>
-        <span className={layoutStyles.menuButton} onClick={toggle('right', false)}><i className="fa fa-times"></i></span>
+          <span className={layoutStyles.menuButton} onClick={toggle('right', false)}><i className="fa fa-times"></i></span>
           <div className={layoutStyles.sideNavbar}>
             <ul>
               <Link activeClassName={layoutStyles.active} to="/"><li>Home</li></Link>
