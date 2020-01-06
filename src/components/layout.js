@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from 'gatsby'
+import axios from 'axios'
 import Helmet from 'react-helmet'
 import SideBar from "./sidebar"
 import Drawer from '@material-ui/core/Drawer';
@@ -7,6 +8,20 @@ import "../styles/index.scss"
 import layoutStyles from "./layout.module.scss"
 
 const Layout = props => {
+  useEffect(() => {
+    let API_URL = 
+    console.log(API_URL)
+    axios.post(
+      process.env.API_URL + '/log_user/users',
+    )
+    .then(response => {
+      console.log(response)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }, [])
+
   const [state, setState] = React.useState({
     right: false,
   })
