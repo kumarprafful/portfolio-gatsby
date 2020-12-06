@@ -36,13 +36,7 @@ const Layout = props => {
             <Helmet>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-92LB5RGKK5"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                        
-                    gtag('config', 'G-92LB5RGKK5');
-                </script>
+                <script async src="./tag.js" ></script>
             </Helmet>
             {/* <div className={layoutStyles.sidebar}>
         <SideBar />
