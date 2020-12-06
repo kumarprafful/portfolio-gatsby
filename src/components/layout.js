@@ -35,6 +35,15 @@ const Layout = props => {
         <div className={layoutStyles.container}>
             <Helmet>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-92LB5RGKK5"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                        
+                    gtag('config', 'G-92LB5RGKK5');
+                </script>
             </Helmet>
             {/* <div className={layoutStyles.sidebar}>
         <SideBar />
