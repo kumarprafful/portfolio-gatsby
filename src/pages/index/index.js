@@ -9,7 +9,7 @@ import styles from './index.module.scss'
 import Layout from "../../components/layout"
 import Head from "../../components/head"
 
-import { TopProjects } from '../../data/data'
+import { designedLinks, TopProjects } from '../../data/data'
 
 import dp from '../../images/dp.jpg'
 import dpe from '../../images/dpe.jpg'
@@ -65,9 +65,28 @@ const IndexPage = () => {
                         <Typography variant="h1">Prafful Kumar</Typography>
                         <Typography variant="h4">Engineer. Artist...</Typography>
                     </div>
+
+                    {/* <div className={styles.designedContent}>
+                        {
+                            designedLinks.map((item, index) => (
+                                <div>
+                                    {
+                                        item.link
+                                            ?
+                                            <Link to={item.link}>
+                                                <div className={styles.hexagon}>
+                                                    Projects
+                                                </div>
+                                            </Link>
+                                            : ''
+                                    }
+                                </div>
+                            ))
+                        }
+                    </div> */}
                 </div>
             </div>
-{/* 
+            {/* 
             <div className={`${styles.container} ${styles.projectionSection}`}>
                 <Typography variant="h1">Projects</Typography>
                 <div className={styles.projects}>

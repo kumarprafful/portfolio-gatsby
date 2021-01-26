@@ -662,3 +662,8 @@ pre tt:after {
   color: rgb(255, 255, 255);
   background: rgb(255, 0, 0);
 }
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

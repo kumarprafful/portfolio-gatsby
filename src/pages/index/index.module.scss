@@ -146,8 +146,84 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
+
+.designedContent {
+  position: absolute;
+  color: #fff;
+  bottom: 50px;
+  right: 50px;
+  // .project1 {
+  //   background-color: rgba(92, 0, 157, 0.282);
+  //   // padding: 70px;
+  //   // border-radius: 40px;
+  //   width: 0;
+  //   border-bottom: 30px solid #6c6;
+  //   border-left: 52px solid transparent;
+  //   border-right: 52px solid transparent;
+
+  //   width: 104px;
+  //   height: 60px;
+  //   background-color: #6c6;
+
+  //   width: 0;
+  //   border-top: 30px solid #6c6;
+  //   border-left: 52px solid transparent;
+  //   border-right: 52px solid transparent;
+  // }
+
+  $hexa-color: rgba(92, 0, 157, 0.446);
+  $hexa-hover-color: rgba(92, 0, 157, 0.652);
+  
+  .hexagon {
+    color: #fff;
+    width: 100px;
+    height: 55px;
+    background: $hexa-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid $hexa-color;
+  }
+
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid $hexa-color;
+  }
+  .hexagon:hover {
+    background-color: $hexa-hover-color;
+    cursor: pointer;
+  }
+  .hexagon:hover::before {
+    border-bottom-color: $hexa-hover-color;
+  }
+  .hexagon:hover::after {
+    border-top-color: $hexa-hover-color;
+  }
+  .hexagon::selection {
+    background-color: transparent;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .cardGrid {
     // width: 50%;
